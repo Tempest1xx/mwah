@@ -62,10 +62,10 @@ window.SITE_CONFIG = {
   // A short timeline. Replace the text (and add real photos if you want —
   // see the README for how to swap in an image instead of the flower icon).
   memories: [
-    { date: "EDIT ME", title: "How it started", text: "Add the story of how the two of you met, or the moment you knew." },
-    { date: "EDIT ME", title: "A favorite day", text: "Describe a specific day together that you still think about." },
-    { date: "EDIT ME", title: "A small, ordinary moment", text: "Sometimes the tiny unremarkable moments matter most — put one here." },
-    { date: "Today", title: "Right now", text: "Whatever you want to say about this exact moment in your story." }
+    { date: "EDIT ME", title: "How it started", text: "It started cause it was destined, A simple touney where i came 2nd but still won" },
+    { date: "EDIT ME", title: "A favorite day", text: "I would honestly call out best day the day where i saw botman getting blocked YES" },
+    { date: "EDIT ME", title: "A small, ordinary moment", text: "Our first video call, you dressing infront of me i loved it so much and i still do" },
+    { date: "Today", title: "Right now", text: "Right now i just want you to me promise me that we wont leave eachother and even if one gets pissed we try our best to resolve it" }
   ],
 
   // ---------------- FINALE PAGE ----------------
