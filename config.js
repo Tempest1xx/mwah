@@ -6,8 +6,8 @@
 
 window.SITE_CONFIG = {
 
-  herName: Areena,
-  yourName: Tempi,
+  herName: 'Areena',
+  yourName: 'Tempi',
 
   heroTagline: "Baby's breath for how gently you fill every space around you. Dark red lilies for how deeply I mean this.",
 
