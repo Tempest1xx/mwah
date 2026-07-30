@@ -78,7 +78,7 @@ window.SITE_CONFIG = {
   finalePhoto: "us.jpg",
 
   // The note that sits under the picture. Write whatever you want here.
-  finalePhotoCaption: "EDIT ME — write something to go with this picture.",
+  finalePhotoCaption: "This is the first picture you sent me, even tho i was already in love with those eyes i fell in love much more and i have to admit falling in love with you was the easiest thing, i love your eyes and i will always love you meri jan mwah.",
 
   // Background song. Put an audio file (mp3 works everywhere) in this same
   // folder and put its filename here. Leave it as "" to have no music button
@@ -89,11 +89,11 @@ window.SITE_CONFIG = {
 
   // "Love coupons" — customize freely, add or remove as many as you like.
   coupons: [
-    { title: "One uninterrupted video call", text: "No scrolling on my end, phones down, just us." },
+    { title: "One uninterrupted video call", text: "No phones nothing, just me looking at you watching a movie or playing games" },
     { title: "A handwritten letter in the mail", text: "Actual paper, actual stamp, sent within the week." },
-    { title: "A synced movie night", text: "Same movie, same time, different couches, call running the whole time." },
-    { title: "A surprise care package", text: "Something small in the mail when you least expect it." },
-    { title: "A voice memo instead of a text", text: "Redeemable whenever you're tired of typing." },
-    { title: "Help planning our next visit", text: "I'll actually sit down and look at flights/dates with you." }
+    { title: "A getout of jail free card", text: "If im angry or mad at you (even tho i wont be) use this card. " },
+    { title: "A Day with yes-es only", text: "You already know what this is hehe." },
+    { title: "A voice memo instead of a text", text: "VMS instead of texts from me for a whole day" },
+    { title: "Pick the next team i play in", text: "I'll play in whichever team you want me to." }
   ]
 };
