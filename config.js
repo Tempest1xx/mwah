@@ -29,7 +29,6 @@ window.SITE_CONFIG = {
       "i dont say it perfectly all the time but i really do love you and i appreciate you more than you probably realize"
       "im glad its you and im glad i get to have you in my life",
       "happy girlfriends day baby
-
       "mwah take care of yourself for me 🤍"
     ],
     signOff: "Always yours,"
@@ -38,14 +37,14 @@ window.SITE_CONFIG = {
   // ---------------- REASONS PAGE ----------------
   // Add, remove, or edit as many as you want — the page adjusts automatically.
   reasons: [
-    "The way you laugh at your own jokes before you even finish telling them.",
+    "The way you laugh at my dad jokes.",
     "How you remember tiny things I mentioned once, weeks ago.",
-    "The specific way you say my name when you're annoyed with me — and I still love it.",
-    "You make ordinary Tuesdays feel like an occasion.",
+    "The specific way you say my name when you're annoyed with me, and I love it.",
+    "You make ordinary days feel like an occasion.",
     "The way you fall asleep mid-sentence and insist you were listening.",
-    "How you always save me the last bite, then pretend you didn't.",
+    "The way you always deal with my overthinking without making me feel like its too much.",
     "You've never once made me feel silly for caring too much.",
-    "The way your whole face changes when you talk about something you love."
+    "The way your whole tone changes when you talk about something you love."
   ],
 
   // A bigger bonus pool the "surprise me" button pulls from — feel free to
