@@ -22,9 +22,15 @@ window.SITE_CONFIG = {
     greeting: "My love,",
     paragraphs: [
       "I wanted today to have something just for you — not a big gesture, just a quiet page that says what I mean.",
-      "You fill the ordinary days the way baby's breath fills a bouquet: quietly, everywhere, holding everything else together without asking for the spotlight.",
-      "EDIT ME — this is the paragraph I'd love you to make personal. A real memory, an inside joke, something only the two of you would understand. Even two sentences here will mean more than anything already written for you.",
-      "And then there's the lily — deep red, unhurried, a little dramatic — exactly like the way I feel about you when I actually stop and think about it."
+      "i dont even know how to start this but i just wanted you to know how much you mean to me
+      "you came into my life in a way i didnt expect and somehow you became someone i cant imagine my days without"
+      "you make me feel calm in a way no one else does and even on days when everything feels off you still manage to make things feel a little better just by being there"
+      "i know im not perfect and i overthink and mess up sometimes but one thing that never changes is how much i care about you"
+      "i dont say it perfectly all the time but i really do love you and i appreciate you more than you probably realize"
+      "im glad its you and im glad i get to have you in my life",
+      "happy girlfriends day baby
+
+      "mwah take care of yourself for me 🤍"
     ],
     signOff: "Always yours,"
   },
