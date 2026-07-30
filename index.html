@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Girlfriend's Day</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-bg"></div>
+<div id="petals"></div>
+<div class="progress-dots" id="progressDots"></div>
+
+<button class="music-toggle" id="musicToggle" type="button" aria-label="Play background music" aria-pressed="false">
+  <svg viewBox="0 0 20 20" fill="none">
+    <rect class="bar" x="3" y="8" width="3" height="9" rx="1" fill="#c9a15a"/>
+    <rect class="bar" x="8.5" y="4" width="3" height="13" rx="1" fill="#c9a15a"/>
+    <rect class="bar" x="14" y="10" width="3" height="7" rx="1" fill="#c9a15a"/>
+  </svg>
+</button>
+<audio id="bgAudio" loop preload="none"></audio>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="chapter hero center" id="s-hero">
+    <svg class="fade-up d1" width="120" viewBox="0 0 140 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin:0 auto 24px; display:block;">
+      <path d="M70 118 C 66 90, 60 70, 40 40" stroke="#c9a15a" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M70 118 C 74 92, 82 66, 100 36" stroke="#c9a15a" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M70 118 C 70 84, 70 56, 70 18" stroke="#c9a15a" stroke-width="1.3" stroke-linecap="round"/>
+      <g fill="#fbf7f0">
+        <circle cx="40" cy="40" r="4.5"/><circle cx="30" cy="52" r="3.5"/><circle cx="50" cy="60" r="3.2"/>
+        <circle cx="100" cy="36" r="4.5"/><circle cx="112" cy="48" r="3.5"/><circle cx="92" cy="58" r="3.2"/>
+        <circle cx="70" cy="18" r="5"/><circle cx="58" cy="28" r="3.4"/><circle cx="82" cy="28" r="3.4"/>
+        <circle cx="70" cy="60" r="3"/><circle cx="55" cy="80" r="2.6"/><circle cx="86" cy="80" r="2.6"/>
+      </g>
+    </svg>
+    <span class="eyebrow fade-up d2">For <span data-bind="herName">Her Name</span></span>
+    <h1 class="fade-up d3">Happy<br>Girlfriend's&nbsp;Day</h1>
+    <p class="sub fade-up d4" data-bind="heroTagline">Baby's breath and dark red lilies.</p>
+    <div class="scroll-on">keep scrolling</div>
+  </section>
+
+  <!-- ============ LETTER ============ -->
+  <section class="chapter center" id="s-letter">
+    <div class="reveal">
+      <span class="eyebrow">Chapter One</span>
+      <h2 style="font-style:italic; font-size:clamp(28px,5.5vw,42px); margin-top:10px;">A letter, sealed for you</h2>
+      <p style="color:var(--ivory-dim); font-style:italic; max-width:420px; margin: 12px auto 0;">Tap the envelope to open it.</p>
+
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope">
+          <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="30" width="280" height="160" rx="3" fill="#3a0912" stroke="#c9a15a" stroke-width="1"/>
+            <path d="M10 33 L150 140 L290 33" fill="none" stroke="#c9a15a" stroke-width="1"/>
+            <polygon class="flap" points="10,30 290,30 150,120" fill="#6b0f1a" stroke="#c9a15a" stroke-width="1"/>
+            <circle cx="150" cy="72" r="14" fill="#c9a15a"/>
+            <circle cx="150" cy="72" r="14" fill="none" stroke="#3a0912" stroke-width="1"/>
+          </svg>
+        </div>
+      </div>
+      <p class="envelope-hint" id="envHint">tap to open</p>
+
+      <div class="letter" id="letterBox">
+        <p class="greet" id="letterGreeting">My love,</p>
+        <div id="letterParagraphs"></div>
+        <div class="sign">
+          <span id="letterSignOff">Always yours,</span><br>
+          <span data-bind="yourName">Your Name</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-on">keep scrolling</div>
+  </section>
+
+  <!-- ============ REASONS ============ -->
+  <section class="chapter center" id="s-reasons">
+    <div class="reveal">
+      <span class="eyebrow">Chapter Two</span>
+      <h2 style="font-style:italic; font-size:clamp(28px,5.5vw,42px); margin-top:10px;">A short, incomplete list</h2>
+      <p style="color:var(--ivory-dim); font-style:italic; max-width:420px; margin: 12px auto 0;">Tap each card to flip it.</p>
+
+      <div class="card-grid" id="cardGrid"></div>
+      <p class="reasons-progress" id="progress"></p>
+
+      <div class="surprise-box">
+        <span class="eyebrow">Not enough?</span>
+        <p style="color:var(--ivory-dim); margin-top:8px;">There's more where that came from.</p>
+        <button class="btn" id="surpriseBtn">Surprise me</button>
+        <p id="bonusReason"></p>
+      </div>
+    </div>
+    <div class="scroll-on">keep scrolling</div>
+  </section>
+
+  <!-- ============ MEMORIES ============ -->
+  <section class="chapter" id="s-memories">
+    <div class="center reveal" style="margin-bottom:10px;">
+      <span class="eyebrow">Chapter Three</span>
+      <h2 style="font-style:italic; font-size:clamp(28px,5.5vw,42px); margin-top:10px;">A small timeline of us</h2>
+    </div>
+    <div class="timeline" id="timeline" style="max-width:560px; margin: 20px auto 0; width:100%;"></div>
+    <div class="scroll-on">keep scrolling</div>
+  </section>
+
+  <!-- ============ FINALE ============ -->
+  <section class="chapter center" id="s-finale">
+    <div class="reveal" id="lockSection">
+      <span class="eyebrow">Chapter Four</span>
+      <h2 style="font-style:italic; font-size:clamp(28px,5.5vw,42px); margin-top:10px;">One word gets you in</h2>
+      <p style="color:var(--ivory-dim); font-style:italic; max-width:420px; margin: 12px auto 0;">You already know it.</p>
+
+      <div class="lock">
+        <form id="lockForm" autocomplete="off">
+          <input type="text" id="lockInput" placeholder="type it here" aria-label="Passcode">
+          <button class="btn" type="submit">Unlock</button>
+        </form>
+        <p class="lock-hint" id="lockHint"></p>
+        <p class="lock-error" id="lockError"></p>
+      </div>
+    </div>
+
+    <div id="finale-content">
+      <h2 style="font-style:italic; font-size:clamp(28px,5.5vw,42px);" id="finaleMessage"></h2>
+
+      <div class="lily-wrap" id="lily">
+        <svg viewBox="0 0 150 170" xmlns="http://www.w3.org/2000/svg">
+          <path d="M75 150 L75 60" stroke="#8c1c2b" stroke-width="2" stroke-linecap="round"/>
+          <path d="M75 130 C 55 122, 45 108, 50 96" stroke="#3a0912" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <path d="M75 140 C 95 132, 105 118, 100 106" stroke="#3a0912" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <g>
+            <path class="lily-petal p1" d="M75 68 C 55 60, 44 34, 58 14 C 66 30, 72 50, 75 68 Z" fill="#6b0f1a" stroke="#c9a15a" stroke-width="0.6"/>
+            <path class="lily-petal p2" d="M75 68 C 62 54, 58 26, 70 8 C 74 26, 76 48, 75 68 Z" fill="#8c1c2b" stroke="#c9a15a" stroke-width="0.6"/>
+            <path class="lily-petal p3" d="M75 68 C 75 44, 75 22, 75 4 C 78 24, 78 46, 75 68 Z" fill="#6b0f1a" stroke="#c9a15a" stroke-width="0.6"/>
+            <path class="lily-petal p4" d="M75 68 C 88 54, 92 26, 80 8 C 76 26, 74 48, 75 68 Z" fill="#8c1c2b" stroke="#c9a15a" stroke-width="0.6"/>
+            <path class="lily-petal p5" d="M75 68 C 95 60, 106 34, 92 14 C 84 30, 78 50, 75 68 Z" fill="#6b0f1a" stroke="#c9a15a" stroke-width="0.6"/>
+          </g>
+          <circle cx="75" cy="66" r="4" fill="#c9a15a"/>
+        </svg>
+      </div>
+      <p style="color:var(--ivory-dim); font-style:italic;">tap the lily</p>
+
+      <div class="photo-frame">
+        <img id="finalePhotoImg" src="" alt="A picture for her">
+        <div class="photo-fallback" id="photoFallback">Add a photo — see README, section "Add your own picture"</div>
+      </div>
+      <p class="photo-caption" id="finalePhotoCaption"></p>
+
+      <div style="margin-top:50px;">
+        <span class="eyebrow">A few things, redeemable anytime</span>
+        <h3 style="font-style:italic; font-size:clamp(24px,4.5vw,30px); margin-top:10px;">Love coupons</h3>
+        <div class="card-grid" id="couponGrid"></div>
+      </div>
+
+      <div style="margin-top:50px;">
+        <button class="btn ghost" id="confettiBtn">Celebrate</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>made with care, just for you</footer>
+<script src="config.js"></script>
+<script src="script.js"></script>
+<script>
+  const cfg = window.SITE_CONFIG || {};
+
+  /* ---------- background music ---------- */
+  const musicBtn = document.getElementById('musicToggle');
+  const audio = document.getElementById('bgAudio');
+  if (cfg.song) {
+    audio.src = cfg.song;
+    audio.volume = (typeof cfg.songVolume === 'number') ? cfg.songVolume : 0.36;
+    musicBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play().then(() => {
+          musicBtn.classList.add('playing');
+          musicBtn.setAttribute('aria-pressed', 'true');
+          musicBtn.setAttribute('aria-label', 'Pause background music');
+        }).catch(() => { /* file missing or blocked — button just stays off */ });
+      } else {
+        audio.pause();
+        musicBtn.classList.remove('playing');
+        musicBtn.setAttribute('aria-pressed', 'false');
+        musicBtn.setAttribute('aria-label', 'Play background music');
+      }
+    });
+  } else {
+    musicBtn.style.display = 'none';
+  }
+
+  /* ---------- letter ---------- */
+  const letter = cfg.letter || {};
+  document.getElementById('letterGreeting').textContent = letter.greeting || 'My love,';
+  document.getElementById('letterSignOff').textContent = letter.signOff || 'Always yours,';
+  const pWrap = document.getElementById('letterParagraphs');
+  (letter.paragraphs || []).forEach(txt => {
+    const p = document.createElement('p');
+    p.textContent = txt;
+    if (/^edit me/i.test(txt.trim())) p.classList.add('editable');
+    pWrap.appendChild(p);
+  });
+  const envelope = document.getElementById('envelope');
+  const letterBox = document.getElementById('letterBox');
+  const envHint = document.getElementById('envHint');
+  envelope.addEventListener('click', () => {
+    envelope.classList.add('open');
+    letterBox.classList.add('shown');
+    envHint.style.opacity = '0';
+  });
+
+  /* ---------- reasons ---------- */
+  const grid = document.getElementById('cardGrid');
+  const list = cfg.reasons || [];
+  let flippedCount = 0;
+  list.forEach((text, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'card';
+    btn.setAttribute('aria-label', 'Reveal reason ' + (i + 1));
+    btn.innerHTML = `
+      <div class="card-inner">
+        <div class="card-face front">
+          <div class="idx">${String(i + 1).padStart(2, '0')}</div>
+          <div>tap to reveal</div>
+        </div>
+        <div class="card-face back">${text}</div>
+      </div>`;
+    btn.addEventListener('click', () => {
+      if (!btn.classList.contains('flipped')) { flippedCount++; updateProgress(); }
+      btn.classList.toggle('flipped');
+    });
+    grid.appendChild(btn);
+  });
+  function updateProgress(){ document.getElementById('progress').textContent = `${flippedCount} of ${list.length} reasons found`; }
+  updateProgress();
+  const bonus = cfg.bonusReasons || [];
+  const bonusEl = document.getElementById('bonusReason');
+  document.getElementById('surpriseBtn').addEventListener('click', () => {
+    if (!bonus.length) return;
+    const pick = bonus[Math.floor(Math.random() * bonus.length)];
+    bonusEl.style.opacity = 0;
+    setTimeout(() => { bonusEl.textContent = pick; bonusEl.style.transition = 'opacity .5s'; bonusEl.style.opacity = 1; }, 150);
+  });
+
+  /* ---------- memories ---------- */
+  const tlWrap = document.getElementById('timeline');
+  (cfg.memories || []).forEach(m => {
+    const item = document.createElement('div');
+    item.className = 'tl-item reveal';
+    item.innerHTML = `<div class="tl-date">${m.date}</div><h3>${m.title}</h3><p>${m.text}</p>`;
+    tlWrap.appendChild(item);
+  });
+  window.__reinitReveal();
+
+  /* ---------- finale: passcode lock ---------- */
+  document.getElementById('lockHint').textContent = cfg.passcodeHint || '';
+  const form = document.getElementById('lockForm');
+  const input = document.getElementById('lockInput');
+  const err = document.getElementById('lockError');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const guess = (input.value || '').trim().toLowerCase();
+    const answer = (cfg.passcode || '').trim().toLowerCase();
+    if (guess && guess === answer) {
+      document.getElementById('lockSection').style.display = 'none';
+      const finale = document.getElementById('finale-content');
+      finale.classList.add('shown');
+      finale.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      err.textContent = "Not quite — try again.";
+      input.focus();
+    }
+  });
+
+  document.getElementById('finaleMessage').textContent = cfg.finaleMessage || '';
+
+  /* finale photo — falls back to a placeholder frame if the image is missing */
+  const photoImg = document.getElementById('finalePhotoImg');
+  const photoFallback = document.getElementById('photoFallback');
+  photoImg.addEventListener('error', () => {
+    photoImg.style.display = 'none';
+    photoFallback.style.display = 'flex';
+  });
+  if (cfg.finalePhoto) {
+    photoImg.src = cfg.finalePhoto;
+  } else {
+    photoImg.style.display = 'none';
+    photoFallback.style.display = 'flex';
+  }
+  document.getElementById('finalePhotoCaption').textContent = cfg.finalePhotoCaption || '';
+
+  /* ---------- lily bloom ---------- */
+  document.getElementById('lily').addEventListener('click', function () { this.classList.toggle('bloomed'); });
+
+  /* ---------- coupons ---------- */
+  const couponGrid = document.getElementById('couponGrid');
+  (cfg.coupons || []).forEach((c) => {
+    const btn = document.createElement('button');
+    btn.className = 'card';
+    btn.setAttribute('aria-label', 'Reveal coupon: ' + c.title);
+    btn.innerHTML = `
+      <div class="card-inner">
+        <div class="card-face front"><div>tap to reveal</div></div>
+        <div class="card-face back"><div class="ctitle">${c.title}</div><div>${c.text}</div></div>
+      </div>`;
+    btn.addEventListener('click', () => btn.classList.toggle('flipped'));
+    couponGrid.appendChild(btn);
+  });
+
+  /* ---------- confetti ---------- */
+  document.getElementById('confettiBtn').addEventListener('click', () => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const colors = ['#c9a15a', '#8c1c2b', '#fbf7f0', '#6b0f1a'];
+    for (let i = 0; i < 40; i++) {
+      const piece = document.createElement('div');
+      piece.className = 'confetti-piece';
+      const size = 5 + Math.random() * 6;
+      piece.style.width = size + 'px';
+      piece.style.height = size + 'px';
+      piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+      piece.style.left = (50 + (Math.random() * 40 - 20)) + 'vw';
+      piece.style.top = '40vh';
+      document.body.appendChild(piece);
+      const dx = (Math.random() * 300 - 150);
+      const dy = 200 + Math.random() * 300;
+      const rot = Math.random() * 720 - 360;
+      piece.animate([
+        { transform: 'translate(0,0) rotate(0deg)', opacity: 1 },
+        { transform: `translate(${dx}px, ${dy}px) rotate(${rot}deg)`, opacity: 0 }
+      ], { duration: 1400 + Math.random() * 600, easing: 'cubic-bezier(.22,.68,.2,1)' });
+      setTimeout(() => piece.remove(), 2200);
+    }
+  });
+</script>
+</body>
+</html>
