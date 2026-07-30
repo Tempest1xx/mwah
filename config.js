@@ -28,7 +28,7 @@ window.SITE_CONFIG = {
       "i know im not perfect and i overthink and mess up sometimes but one thing that never changes is how much i care about you",
       "i dont say it perfectly all the time but i really do love you and i appreciate you more than you probably realize",
       "im glad its you and im glad i get to have you in my life",
-      "happy girlfriends day baby",
+      "happy girlfriends day baby. Even tho everyday is a girlfriend day and every day is areena's day",
       "mwah take care of yourself for me 🤍"
     ],
     signOff: "Always yours,"
