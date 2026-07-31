@@ -21,7 +21,7 @@ window.SITE_CONFIG = {
   letter: {
     greeting: "My love,",
     paragraphs: [
-      "I wanted today to have something just for you — not a big gesture, just a quiet page that says what I mean.",
+      "I wanted today to have something just for you, not a big gesture, just a quiet page that says what I mean.",
       "i dont even know how to start this but i just wanted you to know how much you mean to me",
       "you came into my life in a way i didnt expect and somehow you became someone i cant imagine my days without",
       "you make me feel calm in a way no one else does and even on days when everything feels off you still manage to make things feel a little better just by being there",
