@@ -89,7 +89,7 @@ window.SITE_CONFIG = {
 
   // "Love coupons" — customize freely, add or remove as many as you like.
   coupons: [
-    { title: "One uninterrupted video call", text: "No phones nothing, just me looking at you watching a movie or playing games" },
+    { title: "No lie card", text: "No Lies, SINCE THAT WHAT YOU WANTED BAAD MEIN BOLNA NHI ITS TOO MUCH" },
     { title: "A handwritten letter in the mail", text: "Actual paper, actual stamp, sent within the week." },
     { title: "A getout of jail free card", text: "If im angry or mad at you (even tho i wont be) use this card. " },
     { title: "A Day with yes-es only", text: "You already know what this is hehe." },
